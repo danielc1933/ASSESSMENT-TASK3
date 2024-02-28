@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<head>
+<title>Assessment Task 3</title>
+<style>
+  /* Body styling */
+body {
+    font-family: Arial, sans-serif; /* Font family for the entire page */
+    background-color: #CC00CC; /*  background color for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 20px; 
+}
+
+/* Container styling */
+.container {
+    max-width: 800px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Heading 1 styling */
+h1 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+/* Styling for student information */
+.student-info {
+    background-color: #F2BED1; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    border: 2px solid black; 
+}
+
+/* Box styling */
+.box {
+    width: 700px; 
+    background-color: #FDCEDF; 
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px auto;
+    text-align: left; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.box h1 {
+    margin-bottom: 10px; 
+}
+
+.box p {
+    margin: 5px 0; 
+}
+
+.box a {
+    color: #fff; /* Change link color to white */
+    text-decoration: underline; /* Add underline to links */
+}
+
+/* Styling for web attacks and key dates information */
+.web-attacks-info, .key-dates-info {
+    background-color: #FF66CC; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Table styling */
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    border: 2px solid #FF99CC; 
+    border-radius: 8px; 
+    margin-top: 20px; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+}
+
+th {
+    background-color: #FF99FF; 
+    color: #fff; 
+    font-weight: bold;
+}
+
+td:first-child {
+    width: 150px; 
+}
+
+/* Image styling */
+img {
+    max-width: 100px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
+/* Paragraph styling */
+p {
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+
+/* Link styling */
+a {
+    color: #007bff; 
+    text-decoration: none; /* Remove default underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    margin: 5px; 
+}
+
+/* Styling for message */
+#message {
+    margin-top: 20px; 
+}
+
+/* Styling for image */
+#image {
+    margin-top: 20px; 
+    max-width: 100%; 
+    display: none; 
+}
+
+#ReF {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="student-info">
+    <div class="box">  
+      <h1>Student Information</h1>
+      <p>Student Number: 510574</p>
+      <p>Full Name: Daniel Curtis</p>
+      <p>Subject Code: COMP804</p>
+      <p>Subject Title:ASSESSMENT TASK 3</p>
+      <p>Assignment Number: 1</p>
+      <p>Assignment Due Date: Monday 4 Mar 2024</p>
+    </div>
+    <div class="container"> 
+      <!-- Container for the table -->
+      <div class="table-responsive">
+          <!-- Container for responsive table design -->
+          <table class="table">
+              <!-- Table element with Bootstrap table styling -->
+              <thead>
+                  <!-- Table header section -->
+                  <tr>
+                      <!-- Table header row -->
+                      <th style="background: rgb(255,209,243);color: rgb(255,255,255); width: 60%;">
+                          <!-- Table header cell for Activity with custom styling and width set to 60% -->
+                          Activity
+                      </th>
+                      <th style="background: rgb(255,209,243);color: rgb(255,255,255); width: 40%; text-align: right;">
+                          <!-- Table header cell for Date with custom styling, width set to 40%, and content aligned to the right -->
+                          Date
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- Table body section -->
+                  <tr>
+                      <!-- First row in the table body -->
+                      <td style="border-top-width: 13px;border-top-style: solid;">
+                          <!-- Table data cell for the first activity with top border styling -->
+                          First day to enrol for re-enrolling (continuing) students
+                      </td>
+                      <td style="border-top-width: 13px;border-top-style: solid; text-align: right;">
+                          <!-- Table data cell for the corresponding date with top border styling and aligned to the right -->
+                          28 Aug 2023
+                      </td>
+                  </tr>
+                  <!-- Second row in the table body -->
+                  <tr>
+                      <!-- Second row in the table body -->
+                      <td style="background: #eb8bbb;">
+                          <!-- Table data cell for the second activity with background color -->
+                          Last day to enrol / add subjects yourself
+                      </td>
+                      <td style="background: #eb8bbb; text-align: right;">
+                          <!-- Table data cell for the corresponding date with background color and aligned to the right -->
+                          01 Dec 2023
+                      </td>
+                  </tr>
+                  <!-- Third row in the table body -->
+                  <tr>
+                      <!-- Third row in the table body -->
+                      <td>
+                          <!-- Table data cell for the third activity -->
+                          Last day to enrol / add subjects with Head of Students approval
+                      </td>
+                      <td style="text-align: right;">
+                          <!-- Table data cell for the corresponding date aligned to the right -->
+                          08 Dec 2023
+                      </td>
+                  </tr>
+                  <!-- Fourth row in the table body -->
+                  <tr>
+                      <!-- Fourth row in the table body -->
+                      <td style="background: #eb8bbb;">
+                          <!-- Table data cell for the fourth activity with background color -->
+                          Student Services and Amenities Fees Due
+                      </td>
+                      <td style="background: #eb8bbb; text-align: right;">
+                          <!-- Table data cell for the corresponding date with background color and aligned to the right -->
+                          11 Dec 2023
+                      </td>
+                  </tr>
+                  <!-- Fifth row in the table body -->
+                  <tr>
+                      <!-- Fifth row in the table body -->
+                      <td style="height: 24px;padding-bottom: 128px;">
+                          <!-- Table data cell for the fifth activity with specific height and padding -->
+                          <h1 style="height: 39px;font-size: 22px;">Census Date</h1>
+                          <!-- Heading within the data cell -->
+                          <ul>
+                              <!-- Unordered list within the data cell -->
+                              <li>Fees Due</li>
+                              <!-- List item within the unordered list -->
+                              <li>Last date to withdraw from subjects without paying for them</li>
+                              <!-- List item within the unordered list -->
+                              <li>HECS / FEE HELP debt reporting date</li>
+                              <!-- List item within the unordered list -->
+                              <li>Last day to change HECS / FEE HELP billing option</li>
+                              <!-- List item within the unordered list -->
+                          </ul>
+                          <!-- End of unordered list -->
+                          <p><a href="https://uowedu.service-now.com/">Learn more about Census date &nbsp;</a></p>
+                          <!-- Paragraph with a link -->
+                          <strong>&nbsp;</strong>
+                          <!-- Strong emphasis -->
+                      </td>
+                      <td style="text-align: right;">
+                          <!-- Table data cell for the corresponding date aligned to the right -->
+                          31 Mar 2024
+                      </td>
+                  </tr>
+                  <tr>
+                      <td style="background: #eb8bbb;border-bottom-width: 9px;border-bottom-style: solid;">
+                          <!-- Table data cell for the sixth activity with background color and bottom border -->
+                          Mid-Session Recess (1 week)
+                      </td>
+                      <td style="background: #eb8bbb;border-bottom-width: 9px;border-bottom-style: solid; text-align: right;">
+                          <!-- Table data cell for the corresponding date with background color, bottom border, and aligned to the right -->
+                          15 Apr - 19 Apr 2024
+                      </td>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  <div class="container"> 
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <!-- Table headers -->
+                    <th style="background: rgb(255,209,243);color: rgb(255,255,255);">Name</th>
+                    <th style="background: rgb(255,209,243);color: rgb(255,255,255);">Web Attack</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- First row: Cross-Site Scripting (XSS) -->
+                    <td>Cross-Site Scripting (XSS)
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of Cross-Site Scripting (XSS) -->
+                        <p>Cross-Site Scripting (XSS) is a type of security vulnerability typically found in web applications. It allows attackers to inject malicious scripts into web pages viewed by other users.</p>
+                        <!-- Image related to Cross-Site Scripting (XSS) -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\error.png" alt="XSS Attack">
+                        <!-- Link to learn more about Cross-Site Scripting (XSS) -->
+                        <p><a href="https://www.owasp.org/www-community/attacks/xss/">Learn more about XSS</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Second row: SQL Injection -->
+                    <td>SQL Injection
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of SQL Injection -->
+                        <p>SQL Injection is a type of attack that allows an attacker to execute malicious SQL statements in a web application's database.</p>
+                        <!-- Image related to SQL Injection -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\cyber-attack.png" alt="SQL Injection">
+                        <!-- Link to learn more about SQL Injection -->
+                        <p><a href="https://www.owasp.org/www-community/attacks/SQL_Injection">Learn more about SQL Injection</a></p>
+                    </td>
+                <tr>
+                    <!-- Third row: Phishing -->
+                    <td>Phishing
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of Phishing -->
+                        <p>Phishing is a fraudulent attempt to obtain sensitive information such as usernames, passwords, and credit card details by disguising oneself as a trustworthy entity in electronic communication.</p>
+                        <!-- Image related to Phishing -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\phishing.png" alt="Phishing">
+                        <!-- Link to learn more about Phishing -->
+                        <p><a href="https://www.owasp.org/www-community/attacks/Phishing">Learn more about Phishing</a></p>
+                    </td>
+                <tr>
+                    <!-- Fourth row: Man-in-the-Middle (MitM) Attack -->
+                    <td>Man-in-the-Middle (MitM) Attack
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of Man-in-the-Middle (MitM) Attack -->
+                        <p>A Man-in-the-Middle (MitM) attack occurs when an attacker secretly intercepts and possibly alters communications between two parties without their knowledge.</p>
+                        <!-- Image related to Man-in-the-Middle (MitM) Attack -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\network.png" alt="MitM Attack">
+                        <!-- Link to learn more about Man-in-the-Middle (MitM) Attack -->
+                        <p><a href="https://www.owasp.org/www-community/attacks/Man-in-the-middle_attack">Learn more about MitM Attacks</a></p>
+                    </td>
+                <tr>
+                    <!-- Fifth row: Denial of Service (DoS) Attack -->
+                    <td>Denial of Service (DoS) Attack
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of Denial of Service (DoS) Attack -->
+                        <p>A Denial of Service (DoS) attack aims to disrupt the normal functioning of a targeted server, service, or network by overwhelming it with a flood of internet traffic.</p>
+                        <!-- Image related to Denial of Service (DoS) Attack -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\ddos.png" alt="DoS Attack">
+                        <!-- Link to learn more about Denial of Service (DoS) Attack -->
+                        <p><a href="https://www.owasp.org/www-community/attacks/Denial_of_Service">Learn more about DoS Attacks</a></p>
+                    </td>
+                <tr>
+                    <td>Man-in-the-Browser (MitB) Attack
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of Man-in-the-Browser (MitB) Attack -->
+                        <p>A Man-in-the-Browser (MitB) attack is a type of cyber attack where the attacker installs malware on a victim's web browser to intercept and manipulate web transactions, potentially compromising sensitive information.</p>
+                        <!-- Image related to Man-in-the-Browser (MitB) Attack -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\network.png" alt="MitB Attack">
+                        <!-- Link to learn more about Man-in-the-Browser (MitB) Attack -->
+                        <p><a href="https://en.wikipedia.org/wiki/Man-in-the-browser">Learn more about MitB Attacks</a></p>
+                    </td>
+                <tr>
+                    <!-- Seventh row: Ransomware -->
+                    <td>Ransomware
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of Ransomware -->
+                        <p>Ransomware is a type of malicious software that encrypts a victim's files and demands payment, usually in cryptocurrency, in exchange for decrypting them. It can cause significant data loss and financial damage.</p>
+                        <!-- Image related to Ransomware -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\chat.png" alt="Ransomware">
+                        <!-- Link to learn more about Ransomware -->
+                        <p><a href="https://www.owasp.org/www-community/attacks/Ransomware">Learn more about Ransomware</a></p>
+                    </td>
+                <tr>
+                    <!-- Eighth row: Cross-Site Request Forgery (CSRF) -->
+                    <td>Cross-Site Request Forgery (CSRF)
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of Cross-Site Request Forgery (CSRF) -->
+                        <p>Cross-Site Request Forgery (CSRF) is a type of attack where a malicious website tricks a user's web browser into performing actions on another website where the user is authenticated, without the user's knowledge or consent.</p>
+                        <!-- Image related to Cross-Site Request Forgery (CSRF) -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\network.png" alt="CSRF Attack">
+                        <!-- Link to learn more about Cross-Site Request Forgery (CSRF) -->
+                        <p><a href="https://www.owasp.org/www-community/attacks/csrf">Learn more about CSRF Attacks</a></p>
+                    </td>
+                </tr>
+                    <!-- Ninth row: DNS Spoofing (or DNS Cache Poisoning) -->
+                    <td>DNS Spoofing (or DNS Cache Poisoning)
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of DNS Spoofing (or DNS Cache Poisoning) -->
+                        <p>This attack involves corrupting the DNS data stored on a DNS server's cache. Attackers manipulate this data to redirect users to malicious websites, often used in conjunction with phishing attacks.</p>
+                        <!-- Image related to DNS Spoofing (or DNS Cache Poisoning) -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\globe-grid.png" alt="SQL Injection">
+                        <!-- Link to learn more about DNS Spoofing (or DNS Cache Poisoning) -->
+                        <p><a href="https://www.cisa.gov/">Learn more about DNS Spoofing</a></p>
+                    </td>
+                <tr>
+                    <!-- Tenth row: BIOS/UEFI Firmware Attacks -->
+                    <td>BIOS/UEFI Firmware Attacks
+                        <!-- Link to the source -->
+                        <p><a href="www.owasp.org" class="source-link">Source</a></p>
+                    </td>
+                    <td>
+                        <!-- Description of BIOS/UEFI Firmware Attacks -->
+                        <p>Attacking the system firmware (BIOS or UEFI) can provide attackers with persistent and low-level access to a system. Malicious firmware modifications can be used to evade detection, maintain persistence, or sabotage system functionality.</p>
+                        <!-- Image related to BIOS/UEFI Firmware Attacks -->
+                        <img src="C:\Users\dcur4512\OneDrive - The University of Sydney (Staff)\Desktop\assets\secure-safe_11682695.png" alt="Phishing">
+                        <!-- Link to learn more about BIOS/UEFI Firmware Attacks -->
+                        <p><a href="https://www.darkreading.com/">Learn more about BIOS/UEFI</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+  </table>
+</head>
+<body>
+  <div>
+    <h1>Button Click Demo</h1> 
+    
+
+    <button id="catButton">uuuuahhhhhhhhh</button> <!-- Button with ID catButton -->
+    <button id="dogButton">EAUGH</button> <!-- Button with ID dogButton -->
+    <button id="frogButton">No</button> <!-- Button with ID frogButton -->
+    
+    <!-- Text input field for displaying information -->
+    <div>
+      <input type="text" id="textField" readonly> <!-- Text input field with ID textField set to read-only -->
+    </div>
+    
+    <!-- Division element for displaying messages -->
+    <div id="message"></div> <!-- Division element with ID message -->
+    
+    <!-- Image placeholder -->
+    <div>
+      <img src="" id="image" alt="Animal" /> <!-- Image element with ID image and empty source -->
+    </div>
+  </div>
+  
+  <!-- Paragraph with additional information and links to images -->
+  <p id="message">Images used:
+    <br>
+    <a href="https://professionalmorondotcom.files.wordpress.com/2020/02/arnold-schwarzenegger-in-total-recall-1.jpg">Link 1</a> <!-- Link 1 to an image -->
+    <br>
+    <a href="https://i.ytimg.com/vi/9yHYAG01aaY/sddefault.jpg">Link 2</a> <!-- Link 2 to another image -->
+    <br>
+    <a href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD">Link 3</a> <!-- Link 3 with base64-encoded image -->
+    <br>
+    Bootstrap in-built plugin photos <!-- Additional information -->
+</p>
+</div>
+<!-- Java script button information -->
+  <script>
+    const catButton = document.getElementById('catButton');
+    const dogButton = document.getElementById('dogButton');
+    const frogButton = document.getElementById('frogButton');
+    const textField = document.getElementById('textField');
+    const message = document.getElementById('message');
+    const image = document.getElementById('image');
+
+    catButton.addEventListener('click', function() {
+      catButton.style.backgroundColor = 'lightblue';
+      dogButton.style.backgroundColor = '';
+      frogButton.style.backgroundColor = '';
+      textField.value = 'User clicks uuuuahhhhhhhhh';
+      message.textContent = 'uuuuahhhhhhhhh is clicked';
+      image.src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAREhUQEBISEBAQEBATEg8QEBAPEA8QFRUWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGisdHR0tKystKy0tLS0rLS0tKystKy0rKy0tLS0rKy0tKy0tLTc3Mi0rNystKzcrLSsrLTctN//AABEIAKgBLAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQEDBAYHAgj/xAA8EAACAQIEAwQHBgUEAwAAAAAAAQIDEQQSITEFQVEGImFxBxMygYSRwxREUoOhwSM0QrHwM2Jy8Qgkgv/EABoBAQADAQEBAAAAAAAAAAAAAAACAwQBBQb/xAAjEQEAAgIDAAICAwEAAAAAAAAAAQIDEQQhMRIiMkETUWEz/9oADAMBAAIRAxEAPwDhwAAAAAAABvnot+8fkfUNDN89Fv3j8j6pKnrkt5Z5PdgkXovNkLfI9WPGIXclbfK7eYclp3aHGOpUav3YaKPIwKFNtq+1yzJu+u5kqMnlUd3sVTKcRM9L2PWVpRly2W5jxhN8nbqkzduzvZqGvrvaSTd+rN2wXBqEY5fVx1/2oy2zxHkNteFb47mXFJ4aS1syx6l/hZ2yv2boNt5L+HIwa3AaK2gl/wDKITyYj9Lq8HfkuRSotK5ZZ0zjPAYuPdir+CNLxvD8u6sWVzxZVl4VqIdSLtKdmn0aZSpSseJovqw2jTfsNXU4RlHZr9S5EiOytS9Jx5xd7c9f+iYRdCAAVJIqAZStgPUC9BFuBcgShxwkAGNeAAAAAAAAAAAAAAAAG+ei37x+R9U0M3/0VK/2n8j6pKnrkt4PKLzieWi9F4SE/Zf/ABZ6MbiuIVOlJtpOzS6u9g5LQrXdmb92P4BTUI16iu3Zxi9VrqaFQ1Z13stHNQpvpGK+SRi5Fp109DgVrNt2StDBJtyStexMU6SRj0FYyosx0huyXmeoeZowK6RnSTMXEQOXdx9SicVTTuahxnAp3NzxMdzXOKyVmr8noV49/JsvETj3LnOOpWb8DDn+xJ8SV3LzIySPUpPT5zPH2SfZmu41rcpL/P7m4zRz3D1XCSlHdNHQKc3KKk7axT0dy+ss9gqiqBZtF7KBFUdgVRcieLF+nE6OCAAxrgAAAAAAAAAAAAAAAA6B6KPvP5H1Tn50D0U/efyPqkqeuT431nhlxFJIvQeLGtdspWUVydzaCE7WYJzpKcfahfTqmckahhX+x1rsXK2Gi3tv7jj9O6Z1jhC/9Cko7yjBab7LUxcjx6HB/LTYKnGKcba6vkZuA4kqiukRVL1EP4caMas4RzVJSUbQXi2V4TxHO5KVF0XCeWUV/Q+WboZPjP6brTXepbE58zAxNa13p7zLyaGvcQqXqRprZvVcveRtMu4qxtCcUljK07UYtrk17PzITi/BcdCGeok8v4ZXflsdAhgZTVRzzKEU1ClTeVzdt9Pn7jRIYDEJVL+ug4ybhnk3ePSRdSsRG1WXJMzqGnVpuV0972aMGasT2NwjbzpPW7l5kNi1Zmqk7edmjTGizc+zFRyo68nZeRqFOmbX2Tf8JrpIvpPaifE2kelEHothW8M9RK2FjsOES/SLSiX6UTrrgIAMa4AAAAAAAAAAAAAAAAOg+if7z8P9U58dC9Eq/mfh/qkqeuT437KUcS40LF6K2olZRurPmXEhlOS7pz/jvC5UZuVrU2201svC50zsXJTwdO69nT5GThsFTr0XTqRzJpprpfmXez+B+yw9RuoznlfPLfS/uPO5E/p6nFxa+0JOngYNTUtqqtNfiQwPCqUG3CLWdpycpOTm1s23uZ1AvvRFdI6TtPbErztoahxmrlxEHe13r+ps1efeNO7XSyyUrX1RTb1qw103DDYzNFeWjMbHYeM13mRPAeIRmlBvLNLSL5rwJLEz0FrTpKMcRbpqfafCwhHu2t4dbM5/iops3ftRWvFrnf8AZmlT3RqwWlh5kRvSzpbTe+psPZRf6i8TX402rsnux0l/EXO9zVSe3n5IiGyJDKe1EqommGeXlQGUuFLHRRIv00eFEv0xED55ABkWgAAAAAAAAAAAAAAAB0T0R/efh/qnOzo/ofjf7V8P9UlT1yW/MF/IeXEvRiFtIqespRxGnWbwqvkmr7PSxM4qNmpcm2a3TbTv0ZLYnjVKNOKqPLKTjFJ9TDyqb7h6XEy/qUvhaxbxWOeZQjz38EY8Xpp8y1Qlq5db28EYotOtN38cTO1Pt1FzcM6zLdN2Zqva/iNFK102pbJm1Sw0G28kbtPWyuQuM7MUaicpR1vcnX/Vncfi0nFcXlUqU50U4uLS6aW8zoOGxXrKeb+pLU1fFcJp0tY2duWlzL4DjLTS/pm7e85fuOkce4n7IvtF7TXhc1Kpv7zce2SyT89P8+RptY0YY6YeZP3gxU3Fa2u1sjP7HTarNbKUX+xC1INtJavkbv2Z4D6lesm7zey6I2Uq829tp2USmUuuJTKXK1vIFEuqISJ7FFEu00Vij3GIcfOYAMS0AAAAAAAAAAAAAAAAOkeh3718P9U5udK9DS/mvhvrEqejojQsXMhVxL0VqxQuZSjiHVuxEdqMJUq0r07Jwd9d9ETaie1BbdSM1iYdi8x3B2X4n9ooxl/UlaS6NaGVjas6cW4QdS3JWuRvC+FrDznOm+7PVw6PqjZKMkeXmxxWXs8bL8qNY4Bxr7XUnCbdCMLqzXev1JzGQwkVeriG0ltnb/SOpE1cDGGIdWK0bWeK89X4kvVwmEazuKba2y2Zyvx0tyRPTnfaXH0qtSNLBRne7TnNu0r/ANtLmydm+BeqhH1jzTTzX5LwMfidSEJ58kYKK2jbyT/UzsPjmqOZ6O1zkzvqHf4ZrO7S1Htnic9ZrlE1eq+RJcTrZ5yl1kRsnqa8UPK5F92UowTkszcY3V2ldo6fhJxlGLhJTjlXeSOY5SQ4HxSph5Zo6017UPDwNdYYflt0OUOhTKUwOKhWgqlN3i+XNPxL7pljizlKqJdyFUjpLxEuxiVhEvQgSgfNAAMK0AAAAAAAAAAAAAAAAOm+hZfzfw31jmR0/wBCcb/a/hvrEqekukuJ5aL7ieJRuXuQsWK5S5kFgPCR6SDWl3t1I3G42pLSlotnN218jsV2hN4iO2biMfTp6Slr+H/oyOCcUjVjpuadKgs3ek733bM7ASdOScWkr7Mjn40WonxeX8cnx/tteNoS9uCuyIrVsW7pQ0/FZ6GwYLHKaWm+nvGOx0KdOVV96ML3tv5Hj610+hjNOmoT4HXqzXrFlhfvO+567RWo0XFPlZeRI8Q4z/GyReWnShmqtr2nJd2C/v7jRe0vFvWyyp6Isx03KvLliKzMyhKsy3RjctyncyaET08dHg5Mm9quHLqZeFoa+Bcw9DTM/cSWAwqkvE1VoxzfSO4VxCeEqtL/AE37UeTXW3U6Jgq0K0FUg04te9eZz3juHyyUkrNIv8C4vOg0/ahJd6PLzRXeupWUttv7gMp6wmJp1YKpTd4tW8U9v2LqgNLdvEIF+nEpCJfigPloAGJaAAAAAAAAAAAAAAAAHUvQh97+F+sctOpeg/738L9YlT8h0+SPLie5FC8eHEpbqXLEZxfEWtTTs5atrkSrG0L2+MdreMxWZ5I+8sU1q1y6FnCq7ciqev7mutIh5uS/ylYxuE5pakZh6uevClyhmlLw5IlMXi3dUqetWWye0V1l0Ri8IwMU5Ti27tLM95tbvwFvdFZ12kalaNKlUcpOM6cZShJPWWjcY+d7GvcRxVejShTc1JStWkrWeaWuvvMDtPxhyqKlHanK76ykuRkYKLr5Z1Nc7jBX5ZdXY8/Jx62v09enLtGLtE16tWSeZvvPM775mYToM3LHYSFnproRMsLfZGiONFY6ZbcqboenQfMzMNQu1Hr/AGMqVFQTlLa36khw3DZU6slZyWi/DEsrRRe63ZeyuSSsSuDpZV7vkR/CoZpTb2urfqSr0TL6xpRaUTxaGaOu5BUU1obDjX3WRLporyVWUnTP4JxOVCd07wftx/c6DhasKkVODUoyWnVHLMr5bkxwDjrw8sslek33lzj/ALkU6aK2dBUS9COxZwtSFSCqU2pQlazWvzMulE5pbD5SABhWgAAAAAAAAAAAAAAAB1T0Gr+b+F+scrOr+gmN/tnwv1idPyHT8pRQLzgIovFlq3yZq2KrZ6jfjp8rG2Yp2hL/AIs0zDPX3suwx2ycuemZQVkR2MxneyUu9Ufyh4sv4+NSSShPJG3eSV5P38i1hcNGn7K31cm+9LxfiaZliiHh2oU5SbzVZf1Pm+nkXoYuNKmox1l7EVzctrmJi4RnU1laNNXk76Znt52LFHDtWxNXuQ3hGT1S8upXbxOsblrWKopSqyqO84trTZzumS/AK6qU0vZ9SpNvxlZXIXHV1KFTxruSvu01axZ4TinCeS9o1LRn4Q3uYq31dvtT6NrweI9ZeUrRi5Wp33klo2ZTord6JLUi6+EqVcvq04yd8utowhFd1LxZfxcK0oxpTqK8mllgred2ba3nTFaI2x6DjVqpzaVOL7sN80tv3ZL8VqqMZW6Kxm4Dh9OkkoxjotZNZm35shuMVM0rdWSiEZncsjg9O0Mz5klj4dxNHjCUu7GJm41qyjy2LIVTPaBr0+6RGIg7aE/VfL/PMiq0NWQtG1tbI6M3zK7la8CkTPMTC7aZ7L8eeGnknf1Mnr/tfXyOo0JRdpJ5otJprW6OIVdfebd2E7Uqm/s1aXcfsyd+4+hGZW1s4aADC1AAAAAAAAAAAAAAAAB1r0CL+c8sL9c5Kde9AC/nfLCfXJU9HVMgyGQ4nmxe7MMDHU26c11izRo1MqOi1IXXnoc1x9Jwq1IclLT3pP8Acvwzpk5NXl4yTfUvU8X+JaGZhMHBQTa1Z7nhIPR8zRpi3EIzBYSnU/iSV25N25WW2hGcXxUZy7zeSF8keUnzkTVe1CnlXtXsn0b2IztLgI1JUaVNpxaklKLzPXLf9zJysvx+v9tvCwzfdv1DVMRHu8+9K9zzWoZXTf4oxdue5Mcaw0U3Si7+rSirbt9TGUozq0qcl7Ls/IyU3uG3J1EtzoXVOMnpeKu9vcjH4bSzTlVl5R8CmIqSqNQT7qa08DPpwy2itj2Kx08a09yyJ92F+bNahHPV8mbBxSpaNr+yiN4HQu3K27GkExh45Vm6Ixqk+ZmYuNrQXS5iOCXidcYtaF9TEnRRIzpmHWS9/QJIvE0TFdImJUE15cyOxFOzunstSq8LaywKiLEqd1fZrnzMuomrP5lmD3RmmF1XPAAYm0AAAAAAAAAAAAAAAAOw/wDj3G/23ywn1wCVPXY9dhyHh0ygL01HA0ntPhMuJ20qxTXmkgC3GyZ/Hiq7WXQsVaj5AGyHmygOOYq04xfJOT8+RarYeVOgq8k0ndxkuTYB5XL/AOj2+DOsKBwWOUbtrNKV7NvW75lijK1VS55r/MqBjjuEMsy33hlG0c/NklhIvWTWwB68ePGmftKN4pUve3MkuEUFGN/8uVBw2xMZXbnkjvzfRF71dlpr4gBxh4/EqnFzlokve/AjuHznUvU2v7KfJdQCO+1kR0YzGKKdOHek9/PmY0MNanJy3lqwCNk4WcLHPe+2pHtWlJdGVBRaFtO3OgAee3gAAAAAAAP/2Q==';
+      image.style.display = 'block';
+    });
+
+    dogButton.addEventListener('click', function() {
+      catButton.style.backgroundColor = '';
+      dogButton.style.backgroundColor = 'lightblue';
+      frogButton.style.backgroundColor = '';
+      textField.value = 'User clicks EAUGH';
+      message.textContent = 'EAUGH is clicked';
+      image.src = 'https://professionalmorondotcom.files.wordpress.com/2020/02/arnold-schwarzenegger-in-total-recall-1.jpg';
+      image.style.display = 'block';
+    });
+
+    frogButton.addEventListener('click', function() {
+      catButton.style.backgroundColor = '';
+      dogButton.style.backgroundColor = '';
+      frogButton.style.backgroundColor = 'lightblue';
+      textField.value = 'User clicks nO';
+      message.textContent = 'NO is clicked';
+      image.src = 'https://i.ytimg.com/vi/9yHYAG01aaY/sddefault.jpg';
+      image.style.display = 'block';
+    });
+  </script>
+</body>
